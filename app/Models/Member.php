@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Member extends Model
 {
+    protected $guarded = ['id'];
+    protected $fillable = [
+        'code',
+        'name',
+    ];
+    public function books() {
+        return $this->hasMany(Books::class);
+    }
     use HasFactory;
 }

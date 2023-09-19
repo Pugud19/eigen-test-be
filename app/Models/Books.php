@@ -7,5 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Books extends Model
 {
+    protected $guarded = ['id'];
+    protected $fillable = [
+        'code',
+        'title',
+        'author',
+        'stock',
+    ];
+    public function members()
+    {
+        return $this->belongsTo(Member::class);
+    }
     use HasFactory;
 }
