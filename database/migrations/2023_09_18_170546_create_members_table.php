@@ -16,11 +16,9 @@ class CreateMembersTable extends Migration
         Schema::create('members', function (Blueprint $table) {
             $table->id();
             $table->string('code')->unique();
-            $table->unsignedBigInteger('book_id');
             $table->string('name');
             $table->timestamps();
 
-            $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

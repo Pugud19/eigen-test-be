@@ -14,9 +14,8 @@ class Books extends Model
         'author',
         'stock',
     ];
-    public function members()
-    {
-        return $this->belongsTo(Member::class);
+    public function pinjamans(){
+        return $this->belongsTo(PinjamanBuku::class);
     }
     use HasFactory;
 }

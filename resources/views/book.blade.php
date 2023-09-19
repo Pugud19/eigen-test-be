@@ -2,7 +2,6 @@
 
 @section('content')
 <table class="table table-responsive">
-    @foreach ($books as $bk)
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -12,6 +11,7 @@
         <th scope="col">Stock</th>
       </tr>
     </thead>
+    @foreach ($books as $bk)
     <tbody>
       <tr>
         <th scope="row">{{ $bk->id }}</th>

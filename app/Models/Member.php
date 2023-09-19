@@ -12,8 +12,9 @@ class Member extends Model
         'code',
         'name',
     ];
-    public function books() {
-        return $this->hasMany(Books::class);
+
+    public function pinjamans(){
+        return $this->belongsTo(PinjamanBuku::class);
     }
     use HasFactory;
 }
