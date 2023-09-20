@@ -17,7 +17,7 @@ npm install
 
 make your database in local, name your database `test-be`
 import database in this repo to your sql database
-copy `.env.example` and rename to `.env` 
+,copy `.env.example` and rename to `.env` 
 
 - run this project 
 ```
