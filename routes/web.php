@@ -21,7 +21,8 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::resource('/member', MemberController::class);
 Route::resource('/', PinjamanController::class);
+Route::resource('/pinjamans', PinjamanController::class);
 Route::resource('books', BookController::class);
 Route::get('/borrow', [MemberController::class, 'create']);
-Route::post('/borrow', [MemberController::class, 'borrow'])->name('members.borrow');
+Route::post('/pinjamans', [PinjamanController::class, 'store'])->name('pinjamans.store');
 

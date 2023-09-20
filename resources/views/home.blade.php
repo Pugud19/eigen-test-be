@@ -23,8 +23,10 @@
         </style>
     </head>
     <body class="antialiased">
-        <div class="container text-center">
+        <div class="container ">
+            <div class="my-auto pt-5 mx-auto">
             @yield('content')
+            </div>
         </div>
     </body>
 </html>

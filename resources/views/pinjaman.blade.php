@@ -1,6 +1,7 @@
 @extends('home')
 
 @section('content')
+<a href="{{ route('pinjamans.create')}}" class="btn btn-primary">Tambah</a>
 <table class="table table-responsive">
     <thead>
       <tr>
